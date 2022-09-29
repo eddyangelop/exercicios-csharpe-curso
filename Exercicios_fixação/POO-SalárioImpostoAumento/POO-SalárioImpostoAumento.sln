@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POO-SalárioImpostoAumento", "POO-SalárioImpostoAumento\POO-SalárioImpostoAumento.csproj", "{CA7A5AE7-CED6-467A-97D5-47A85517ED62}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CA7A5AE7-CED6-467A-97D5-47A85517ED62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA7A5AE7-CED6-467A-97D5-47A85517ED62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA7A5AE7-CED6-467A-97D5-47A85517ED62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA7A5AE7-CED6-467A-97D5-47A85517ED62}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2CB3EF4E-393C-4E4C-9B22-F28FDF7C38B0}
+	EndGlobalSection
+EndGlobal
