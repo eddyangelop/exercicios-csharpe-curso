@@ -1,6 +1,6 @@
 ﻿using System.Globalization;
 
-namespace Encapsulamento_manual
+namespace Properties
 {
     class Produto
     {
@@ -20,32 +20,29 @@ namespace Encapsulamento_manual
             _quantidade = quantidade;
         }
 
-        //implementação de encapsulamento Manual.
-
-        public string GetNome()
+        //implementação de Properties criadas.
+        public string Nome
         {
-            return _nome;
-        }
-
-        public void SetNome(string nome)
-        {
-            if (nome != null && nome.Length > 1)
-            {
-                _nome = nome;
+            get { return _nome; }
+            set {
+                if (value != null && value.Length > 1)
+                {
+                    _nome = value;
+                }
             }
-          
         }
 
-        public double GetPreco()
+        public double Preco
         {
-            return _preco;
+            get { return _preco; }
         }
-        public int GetQuantidade()
+        
+        public int Quantidade
         {
-            return _quantidade;
+            get { return _quantidade; }
         }
-
-        // fim  de implementação de encapsulamento Manual.
+        
+        //fim de properties criadas.
 
         public double ValorTotalEmEstoque()
         {

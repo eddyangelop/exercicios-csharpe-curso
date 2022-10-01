@@ -8,7 +8,7 @@ namespace Construtores
         {
 
 
-            Console.WriteLine("Entre os dados do produto:");
+            Console.WriteLine("Entre com os dados do produto: ");
             Console.Write("Nome: ");
             string nome = Console.ReadLine();
             Console.Write("Preço: ");
