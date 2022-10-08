@@ -15,8 +15,22 @@ namespace Course
             
         }
 
-        public ContaBancaria(int numero, string titular, double saldo) : this(numero, titular) {
-            Saldo = saldo;
+        public ContaBancaria(int numero, string titular, double depositoInicial) : this(numero, titular) {
+            Deposito(depositoInicial);
+        }
+
+        public void Deposito(double quantia)
+        {
+            Saldo += quantia;
+        }
+
+        public void Saque(double quantia)
+        {
+            Saldo -= quantia + 5.0;
+
+            //ou
+            //Saldo -= quantia;
+            //Saldo -= 5.0; (taxa).
         }
 
         public override string ToString()

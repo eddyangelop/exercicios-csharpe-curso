@@ -3,7 +3,7 @@ using System.Globalization;
 
 namespace Course
 {
-    class Program
+    class ContaBancaria1
     {
         static void Main(string[] args)
         {
@@ -18,22 +18,46 @@ namespace Course
 
             Console.Write("Haverá depósito inicial(s / n) ? ");
             char resp = char.Parse(Console.ReadLine());
-            if (resp == 's'|| resp == 'S' )
+            if (resp == 's' || resp == 'S')
             {
                 Console.Write("Entre com o valor para depósito inicial: ");
                 double depositoInicial = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
                 conta = new ContaBancaria(numero, titular, depositoInicial);
 
-            } else
+            }
+            else
             {
                 conta = new ContaBancaria(numero, titular);
             }
+
+
+
+       
+
 
             Console.WriteLine();
             Console.WriteLine("Dados da conta: ");
             Console.WriteLine(conta);
 
 
+            Console.WriteLine();
+            Console.Write("Entre com o valor para depósito: ");
+            double quantia = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            conta.Deposito(quantia);
+
+            Console.WriteLine();
+            Console.WriteLine("Dados da conta atualizados:");
+            Console.WriteLine(conta);
+
+
+            Console.WriteLine();
+            Console.Write("Entre com o valor de saque: ");
+            quantia = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            conta.Saque(quantia);
+
+            Console.WriteLine();
+            Console.WriteLine("Dados da conta atualizados:");
+            Console.WriteLine(conta);
 
 
         }
