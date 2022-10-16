@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.Design.Serialization;
 
 namespace date_time
 {
@@ -10,7 +11,7 @@ namespace date_time
             DateTime d = new DateTime(2001, 8, 15, 13, 45, 58, 275);
             Console.WriteLine(d);
 
-
+            // Propriedades do DateTime.
             Console.WriteLine("1) Date: " + d.Date);
             Console.WriteLine("2) Day: " + d.Day);
             Console.WriteLine("3) DayOfWeek: " + d.DayOfWeek);
@@ -26,10 +27,11 @@ namespace date_time
             Console.WriteLine("13) Year: " + d.Year);
 
             Console.WriteLine("--------------------------------------");
-
+       
 
             // Date time para string.
             DateTime d1= new DateTime(2001, 8, 15, 13, 45, 58);
+
             string s1 = d1.ToLongDateString();
             string s2 = d1.ToLongTimeString();
             string s3 = d1.ToShortDateString();
@@ -37,6 +39,7 @@ namespace date_time
             string s5 = d1.ToString();
             string s6 = d1.ToString("yyyy-MM-dd HH:mm:ss");
             string s7 = d1.ToString("yyyy-MM-dd HH:mm:ss.fff");
+
             Console.WriteLine(s1);
             Console.WriteLine(s2);
             Console.WriteLine(s3);
@@ -48,18 +51,27 @@ namespace date_time
             Console.WriteLine("---------------------------------------");
 
             // Date time add.
+            DateTime x1 = DateTime.Now;
+            DateTime y0 = x1.AddDays(7);
+            TimeSpan t = y0.Subtract(x1);
+
 
             DateTime x = new DateTime(2001, 8, 15, 13, 45, 58);
 
-
             DateTime y1 = x.AddDays(1);
-            DateTime y2 = x.AddHours(1);
-            DateTime y3 = x.AddMilliseconds(1);
-            DateTime y4 = x.AddMinutes(1);
-            DateTime y5 = x.AddMonths(1);
-            DateTime y6 = x.AddSeconds(1);
+            DateTime y2 = x.AddHours(2);      
+            DateTime y3 = x.AddMinutes(3);
+            DateTime y4 = x.AddMonths(1);
+            DateTime y5 = x.AddSeconds(1);
+            DateTime y6 = x.AddMilliseconds(5);
             DateTime y7 = x.AddTicks(9000000000L);
             DateTime y8 = x.AddYears(1);
+
+            Console.WriteLine("Esta é a data e hora atual do boleto: " + x1);
+            Console.WriteLine("O seu vencimento está para o dia:" + y0);
+            Console.WriteLine("Esta é a quantidade de dias até o vencimento: " + t.Days + " dias");
+
+            Console.WriteLine();
 
             Console.WriteLine(y1);
             Console.WriteLine(y2);
@@ -71,13 +83,10 @@ namespace date_time
             Console.WriteLine(y8);
 
 
-            DateTime a = new DateTime(2001, 8, 15);
-            DateTime b = new DateTime(2001, 8, 18);
-            //DateTime x1 = x.Subtract(y);
+            
 
-            TimeSpan t = a.Subtract(b);
+            
 
-            Console.WriteLine(t);
         }
     }
 }
