@@ -37,7 +37,6 @@ namespace time_span
             Console.WriteLine(t5);
             Console.WriteLine(t6);
 
-
             // Metodos From.
 
             // imprime dias/horas.

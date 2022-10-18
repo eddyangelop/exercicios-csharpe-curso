@@ -68,7 +68,7 @@ namespace date_time
             DateTime y8 = x.AddYears(1);
 
             Console.WriteLine("Esta é a data e hora atual do boleto: " + x1);
-            Console.WriteLine("O seu vencimento está para o dia:" + y0); 
+            Console.WriteLine("O seu vencimento está para o dia: " + y0); 
 
             Console.WriteLine();
 
