@@ -9,6 +9,7 @@ namespace time_span
             // Metodo TimeSpan.
             
             TimeSpan t1 = new TimeSpan(0, 1, 30);
+
             // imprime hora/minuto/segundo.
             Console.WriteLine(t1);
 
