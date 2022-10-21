@@ -53,10 +53,12 @@ namespace date_time
             // Date time add.
             DateTime x1 = DateTime.Now;
             DateTime y0 = x1.AddDays(7);
-            TimeSpan t = y0.Subtract(x1);
+            
 
 
             DateTime x = new DateTime(2001, 8, 15, 13, 45, 58);
+
+            Console.WriteLine("DateTime: 2001, 8, 15, 13, 45, 58");
 
             DateTime y1 = x.AddDays(1);
             DateTime y2 = x.AddHours(2);      
@@ -71,15 +73,17 @@ namespace date_time
             Console.WriteLine("O seu vencimento está para o dia: " + y0); 
 
             Console.WriteLine();
+            Console.WriteLine("RESULTADOS:");
+            Console.WriteLine();
 
-            Console.WriteLine(y1);
-            Console.WriteLine(y2);
-            Console.WriteLine(y3);
-            Console.WriteLine(y4);
-            Console.WriteLine(y5);
-            Console.WriteLine(y6);
-            Console.WriteLine(y7);
-            Console.WriteLine(y8);
+            Console.WriteLine("Dias: " + y1);
+            Console.WriteLine("Horas: " + y2);
+            Console.WriteLine("Minutos: " + y3);
+            Console.WriteLine("Meses: " + y4);
+            Console.WriteLine("Segundos: " + y5);
+            Console.WriteLine("Mile segundos: " + y6);
+            Console.WriteLine("Tiks: " + y7);
+            Console.WriteLine("Anos: " + y8);
 
 
             
