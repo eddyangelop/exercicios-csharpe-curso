@@ -10,6 +10,7 @@ namespace OrderClient.Entities
 
         public Client()
         {
+
         }
 
         public Client(string name, string email, DateTime birthDate)
@@ -22,9 +23,9 @@ namespace OrderClient.Entities
         public override string ToString()
         {
             return Name
-                + ", ("
+                + ", BirthDate: "
                 + BirthDate.ToString("dd/MM/yyyy")
-                + ") - "
+                + ", E-mail: "
                 + Email;
         }
     }

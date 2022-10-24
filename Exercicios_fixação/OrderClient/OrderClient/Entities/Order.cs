@@ -16,6 +16,7 @@ namespace OrderClient.Entities
 
         public Order()
         {
+
         }
 
         public Order(DateTime moment, OrderStatus status, Client client)
