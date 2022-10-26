@@ -5,19 +5,21 @@ namespace OrderClient.Entities
 {
     class OrderItem
     {
-        public int Quantity { get; set; }
-        public double Price { get; set; }
         public Product Product { get; set; }
+        public double Price { get; set; }
+        public int Quantity { get; set; }
+        
+       
 
         public OrderItem()
         {
         }
 
-        public OrderItem(int quantity, double price, Product product)
+        public OrderItem(Product product, double price, int quantity )
         {
-            Quantity = quantity;
-            Price = price;
             Product = product;
+            Price = price;
+            Quantity = quantity;
         }
 
         public double SubTotal()

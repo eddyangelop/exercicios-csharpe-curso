@@ -14,13 +14,13 @@ namespace OrderClient
             Console.Write("Name: ");
             string clientName = Console.ReadLine();
 
-            // Entrar com o e-mail
-            Console.Write("Email: ");
-            string email = Console.ReadLine();
-
             // Entrar com a data de aniversario
             Console.Write("Birth date (DD/MM/YYYY): ");
             DateTime birthDate = DateTime.Parse(Console.ReadLine());
+
+            // Entrar com o e-mail
+            Console.Write("Email: ");
+            string email = Console.ReadLine();
 
             // Entrar com status do pedido
             Console.WriteLine("Enter order data: ");
@@ -28,7 +28,7 @@ namespace OrderClient
             OrderStatus status = Enum.Parse<OrderStatus>(Console.ReadLine());
 
             // Declaração de entidade Class client  e Class order de pedido
-            Client client = new Client(clientName, email, birthDate);
+            Client client = new Client(clientName, birthDate, email);
             Order order = new Order(DateTime.Now, status, client);
 
             // entrar com a quantidade de itens no pedido
@@ -36,7 +36,7 @@ namespace OrderClient
             int n = int.Parse(Console.ReadLine());
 
 
-            // Escopo de incerssão de itens no pedido
+            // Escopo de adição de itens no pedido
             for (int i = 1; i <= n; i++)
             {
                 Console.WriteLine($"Enter #{i} item data:");
@@ -50,7 +50,7 @@ namespace OrderClient
                 Console.Write("Quantity: ");
                 int quantity = int.Parse(Console.ReadLine());
 
-                OrderItem orderItem = new OrderItem(quantity, price, product);
+                OrderItem orderItem = new OrderItem(product, price, quantity);
 
                 order.AddItem(orderItem);
             }
