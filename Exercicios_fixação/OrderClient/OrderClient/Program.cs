@@ -45,12 +45,16 @@ namespace OrderClient
 
                 Console.Write("Product price: ");
                 double price = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-
+                // Estanciação do nome e valor unitario do produto
                 Product product = new Product(productName, price);
+
                 Console.Write("Quantity: ");
                 int quantity = int.Parse(Console.ReadLine());
+             
 
                 OrderItem orderItem = new OrderItem(product, price, quantity);
+
+                
 
                 order.AddItem(orderItem);
             }

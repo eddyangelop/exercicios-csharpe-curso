@@ -25,7 +25,7 @@ namespace OrderClient.Entities
             return Name
                 + ", BirthDate: "
                 + BirthDate.ToString("dd/MM/yyyy")
-                + ", E-mail: "
+                + ", e-mail: "
                 + Email;
         }
     }
