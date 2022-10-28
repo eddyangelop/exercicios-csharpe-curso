@@ -1,7 +1,5 @@
-﻿
-namespace HerancaEPolimorfismo.Entities
+﻿namespace UpcastingDowncasting.Entities
 {
-    // Super classe account
     internal class Account
     {
         public int Number { get; private set; }

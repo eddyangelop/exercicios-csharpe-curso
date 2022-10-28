@@ -1,5 +1,5 @@
 ﻿using System;
-using HerançaEPolimorfismo.Entities;
+using Heranca.Entities;
 
 namespace heranca_e_polimorfismo
 {

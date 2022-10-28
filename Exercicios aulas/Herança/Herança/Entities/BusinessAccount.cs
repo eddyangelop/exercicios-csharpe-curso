@@ -1,7 +1,8 @@
-﻿using HerancaEPolimorfismo.Entities;
+﻿using Heranca.Entities;
+using Heranca.Entities;
 
 
-namespace HerançaEPolimorfismo.Entities
+namespace Heranca.Entities
 {
     internal class BusinessAccount : Account
     {
@@ -9,7 +10,7 @@ namespace HerançaEPolimorfismo.Entities
 
         public BusinessAccount()
         {
-           
+
         }
 
         // construtor da subclasse businessAccount chamando a suoer classe account
