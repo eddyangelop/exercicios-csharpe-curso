@@ -1,4 +1,5 @@
-﻿namespace VirtualOverride.Entities
+﻿using System;
+namespace MetodoSealedAccount.Entities
 {
     internal class Account
     {
