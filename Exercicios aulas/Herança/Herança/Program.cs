@@ -1,7 +1,7 @@
 ﻿using System;
 using Heranca.Entities;
 
-namespace heranca_e_polimorfismo
+namespace Heranca
 {
     class Program
     {
