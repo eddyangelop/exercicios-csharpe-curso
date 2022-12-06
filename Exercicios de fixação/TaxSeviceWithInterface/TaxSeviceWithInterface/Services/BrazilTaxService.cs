@@ -1,8 +1,8 @@
-﻿using System;
+﻿using TaxService.Services;
 
 namespace TaxService.Services
 {
-    internal class BrazilTaxService
+    internal class BrazilTaxService : ITaxService
     {
         public double Tax(double amount)
         {

@@ -1,4 +1,7 @@
-﻿namespace TaxService.Entities {
+﻿using TaxService.Entities;
+
+namespace TaxService.Entities
+{
     internal class CarRental
     {
 
