@@ -11,10 +11,14 @@ namespace Course
         {
 
             Console.Write("Enter file full path: ");
+            //Caminho para acessar a pasta e o arquivo.csv
+            //c:\temp\vendas1.csv
             string sourceFilePath = Console.ReadLine();
 
             try
             {
+                //Este bloco lê cada item e as informações em linha contidas no arquivo origem
+                //e cria uma nova pasta e arquivo de mesma extensão.
                 string[] lines = File.ReadAllLines(sourceFilePath);
 
                 string sourceFolderPath = Path.GetDirectoryName(sourceFilePath);
@@ -23,11 +27,13 @@ namespace Course
 
                 Directory.CreateDirectory(targetFolderPath);
 
+
+                //Este bloco using lê cada linha de arrays e escreve um novo arquivo com as modificações de valores.
                 using (StreamWriter sw = File.AppendText(targetFilePath))
                 {
                     foreach (string line in lines)
                     {
-
+                    
                         string[] fields = line.Split(',');
                         string name = fields[0];
                         double price = double.Parse(fields[1], CultureInfo.InvariantCulture);
