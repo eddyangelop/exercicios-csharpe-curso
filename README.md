@@ -1,3 +1,3 @@
 # exerciciosCsharpe_curso
 
-programa base utilizado Visual studio 2022.
+Programa base utilizado Visual studio 2022.
