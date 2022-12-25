@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+
 namespace Dictionary
 {
     class Program
@@ -14,6 +15,7 @@ namespace Dictionary
             Console.WriteLine(cookies["email"]);
             cookies.Remove("email");
             Console.WriteLine("Phone number: " + cookies["phone"]);
+
             if (cookies.ContainsKey("email"))
             {
                 Console.WriteLine("Email: " + cookies["email"]);
@@ -22,8 +24,10 @@ namespace Dictionary
             {
                 Console.WriteLine("There is not 'email' key");
             }
+
             Console.WriteLine("Size: " + cookies.Count);
             Console.WriteLine("ALL COOKIES:");
+
             //foreach (KeyValuePair<string, string> item in cookies)
             //or
             foreach (var item in cookies)
