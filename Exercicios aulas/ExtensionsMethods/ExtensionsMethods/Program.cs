@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Globalization;
-using ExtensionsMethods.Extensions;
 
-namespace ProcessFile
+
+namespace System
 {
     class Program
     {
