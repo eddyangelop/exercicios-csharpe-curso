@@ -15,13 +15,17 @@ namespace PredicateRemoveAll
             list.Add(new Product("Tablet", 350.50));
             list.Add(new Product("Hd Case", 80.90));
 
-            //expression Lambda
-            list.RemoveAll(p => p.Price >= 100.0);
-            foreach(Product p in list)
+
+            list.RemoveAll(ProductTest);
+
+            foreach (Product p in list)
             {
                 Console.WriteLine(p);
-            }           
-
+            }
+        }
+        public static bool ProductTest(Product p)
+        {
+            return p.Price >= 100.0;
         }
     }
 }
