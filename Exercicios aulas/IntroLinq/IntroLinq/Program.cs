@@ -12,7 +12,7 @@ namespace Linq
 
 
             // Define the query expression
-            var result = numbers
+            IEnumerable<int> result = numbers
                 .Where(x => x % 2 == 0)
                 .Select(x => x * 10);
 
