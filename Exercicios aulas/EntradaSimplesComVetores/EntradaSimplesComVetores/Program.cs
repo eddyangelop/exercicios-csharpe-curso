@@ -28,6 +28,7 @@ namespace exercicio1
             Console.WriteLine(altura.ToString("F2", CultureInfo.InvariantCulture));
 
             Console.ReadLine();
+
         }
     }
 }
