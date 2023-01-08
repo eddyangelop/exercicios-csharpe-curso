@@ -26,7 +26,6 @@ namespace estrutura_for
 
             Console.ReadLine();
 
-
         }
     }
 }
