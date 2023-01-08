@@ -28,6 +28,7 @@ namespace vetores_part1
 
             Console.WriteLine("AVERAGE HEIGHT = " + avg.ToString("F2", CultureInfo.InvariantCulture));
 
+
         }
     }
 }
