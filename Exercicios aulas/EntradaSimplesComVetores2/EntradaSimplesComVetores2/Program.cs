@@ -29,6 +29,7 @@ namespace entrada_com_vetores2
             Console.WriteLine(altura.ToString("F2", CultureInfo.InvariantCulture));
 
             Console.ReadLine();
+
         }
     }
 }
