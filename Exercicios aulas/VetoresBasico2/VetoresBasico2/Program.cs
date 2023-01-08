@@ -33,6 +33,7 @@ namespace vetores_tipo_referencia
 
             Console.WriteLine("AVERAGE PRICE = " + avg.ToString("F2", CultureInfo.InvariantCulture));
 
+
         }
     }
 }
