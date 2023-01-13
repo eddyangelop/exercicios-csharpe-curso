@@ -1,6 +1,6 @@
 ﻿using System.Globalization;
 
-namespace Encapsulamento_manual
+namespace EncapsulamentoManual
 {
     class Produto
     {
