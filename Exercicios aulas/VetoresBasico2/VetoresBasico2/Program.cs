@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Globalization;
 
-namespace vetores_tipo_referencia
+namespace VetoresTipoReferencia
 {
     class Program
     {

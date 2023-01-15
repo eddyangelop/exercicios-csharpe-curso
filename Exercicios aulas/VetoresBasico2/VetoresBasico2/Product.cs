@@ -1,4 +1,4 @@
-﻿namespace vetores_tipo_referencia
+﻿namespace VetoresTipoReferencia
 {
     internal class Product
     {
