@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace estrutura_if_else_simples
+namespace EstruturaIfElseSimples
 {
     class Program
     {
