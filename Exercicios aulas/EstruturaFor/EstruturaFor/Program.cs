@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace estrutura_for
+namespace EstruturaFor
 {
     class Program
     {
