@@ -45,8 +45,6 @@ namespace EstoqueBasico
             Console.WriteLine();
             Console.WriteLine("Dados atualizados: " + p);
 
-
-
         }
     }
 }
