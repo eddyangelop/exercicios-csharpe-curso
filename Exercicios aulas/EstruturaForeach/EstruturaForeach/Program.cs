@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Foreach
+namespace EstruturaForeach
 {
     class Program
     {
