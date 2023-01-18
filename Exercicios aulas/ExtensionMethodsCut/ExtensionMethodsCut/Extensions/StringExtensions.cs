@@ -12,7 +12,7 @@
             {
                 return thisObj.Substring(0, count) + "...";
             }
-        }
 
+        }
     }
 }
