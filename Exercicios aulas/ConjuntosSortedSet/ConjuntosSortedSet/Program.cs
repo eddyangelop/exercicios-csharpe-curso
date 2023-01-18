@@ -1,7 +1,6 @@
 ﻿using System;
-using System.Net.WebSockets;
 
-namespace ConjuntosSortedSet02
+namespace ConjuntosSortedSet
 {
     class Program
     {
@@ -43,5 +42,6 @@ namespace ConjuntosSortedSet02
             }
             Console.WriteLine();
         }
+
     }
 }
