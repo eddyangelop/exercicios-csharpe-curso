@@ -16,5 +16,6 @@ namespace MultiDelegates
 
             op(a, b);
         }
+
     }
 }

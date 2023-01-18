@@ -13,5 +13,6 @@ namespace MultiDelegates.Services
             double sum = x + y;
             Console.WriteLine(sum);
         }
+
     }
 }
