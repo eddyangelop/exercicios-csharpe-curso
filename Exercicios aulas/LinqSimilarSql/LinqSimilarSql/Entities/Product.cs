@@ -23,5 +23,6 @@ namespace LinqSimilarSql.Entities
                 + ", "
                 + Category.Tier;
         }
+
     }
 }
