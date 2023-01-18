@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 
-namespace conjuntosHashSet01
+namespace conjuntosHashSet
 {
     class Program
     {
@@ -23,8 +23,6 @@ namespace conjuntosHashSet01
             {
                 Console.WriteLine(p);
             }
-
-
 
         }
     }
