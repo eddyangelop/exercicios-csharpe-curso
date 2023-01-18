@@ -21,7 +21,7 @@ namespace HashSetEquals
 
             Point p = new Point(5, 10);
             Console.WriteLine(b.Contains(p));
-
         }
+
     }
 }
