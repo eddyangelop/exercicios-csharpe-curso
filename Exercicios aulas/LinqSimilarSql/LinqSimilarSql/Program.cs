@@ -19,8 +19,6 @@ namespace LinqSimilarSql
             Console.WriteLine();
         }
 
-
-
         static void Main(string[] args)
         {
             Category c1 = new Category() { Id = 1, Name = "Tools", Tier = 2 };
@@ -41,7 +39,6 @@ namespace LinqSimilarSql
                 new Product() {Id = 9, Name = "MacBook", Price = 1800.0, Category = c2},
                 new Product() {Id = 10, Name = "Sound Bar", Price = 700.0, Category = c3},
                 new Product() {Id = 11, Name = "Level", Price = 70.0, Category = c1 }
-
             };
 
             //var r1 = products.Where(p => p.Category.Tier == 1 && p.Price < 900.0);
@@ -99,6 +96,5 @@ namespace LinqSimilarSql
             }
 
         }
-
     }
 }
