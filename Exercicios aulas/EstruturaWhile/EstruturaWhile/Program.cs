@@ -1,14 +1,12 @@
 ﻿using System;
 using System.Globalization;
 
-namespace estrutura_while
+namespace EstruturaWhile
 {
-
     class Program
     {
         static void Main(string[] args)
         {
-
             Console.WriteLine("Digite um número:");
 
             double x = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
@@ -23,9 +21,7 @@ namespace estrutura_while
             }
 
             Console.WriteLine("Número negativo");
-
-
-            Console.ReadLine();
         }
+
     }
 }
