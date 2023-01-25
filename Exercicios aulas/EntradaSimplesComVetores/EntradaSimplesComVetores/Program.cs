@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Globalization;
 
-namespace exercicio1
+namespace EntradaSimplesComVetores
 {
     class Program
     {
@@ -26,9 +26,7 @@ namespace exercicio1
             Console.WriteLine(ultimoNome);
             Console.WriteLine(idade);
             Console.WriteLine(altura.ToString("F2", CultureInfo.InvariantCulture));
-
-            Console.ReadLine();
-
         }
+
     }
 }
