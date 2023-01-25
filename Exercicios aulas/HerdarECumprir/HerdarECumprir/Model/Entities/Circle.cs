@@ -21,6 +21,5 @@ namespace HerdarECumprir.Model.Entities
                 + Area().ToString("F2", CultureInfo.InvariantCulture);
         }
 
-
     }
 }
