@@ -10,7 +10,6 @@ namespace EncapsulamentoManual
 
         public Produto()
         {
-
         }
 
         public Produto(string nome, double preco, int quantidade)
@@ -32,8 +31,7 @@ namespace EncapsulamentoManual
             if (nome != null && nome.Length > 1)
             {
                 _nome = nome;
-            }
-          
+            }   
         }
 
         public double GetPreco()
