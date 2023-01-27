@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace propriedades_time_span
+namespace PropertiesTimeSpan
 {
     class Program
     {
@@ -50,5 +50,6 @@ namespace propriedades_time_span
             Console.WriteLine(mult);
             Console.WriteLine(div);
         }
+
     }
 }
