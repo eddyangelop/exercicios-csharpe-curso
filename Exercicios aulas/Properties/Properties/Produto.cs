@@ -10,7 +10,6 @@ namespace Properties
 
         public Produto()
         {
-
         }
 
         public Produto(string nome, double preco, int quantidade)
@@ -66,5 +65,6 @@ namespace Properties
             + " unidades, Total: $ "
             + ValorTotalEmEstoque().ToString("F2", CultureInfo.InvariantCulture);
         }
+
     }
 }

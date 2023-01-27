@@ -12,10 +12,10 @@ namespace Properties
 
             p.Nome = "T";
 
-
             Console.WriteLine(p.Nome);
             Console.WriteLine(p.Preco);
         }
+
     }
 }
 
