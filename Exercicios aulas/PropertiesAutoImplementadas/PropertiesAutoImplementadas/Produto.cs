@@ -1,13 +1,10 @@
 ﻿using System.Globalization;
 
-namespace properties_auto_implementadas
+namespace PropertiesAutoImplementadas
 {
     class Produto
     {
-
         //implementação padrão auto properties em C#.
-
-   
         
         //1.Atributos privados
         private string _nome;
@@ -19,7 +16,6 @@ namespace properties_auto_implementadas
         //3.Construtores
         public Produto()
         {
-
         }
 
         public Produto(string nome, double preco, int quantidade)
@@ -41,7 +37,6 @@ namespace properties_auto_implementadas
                 }
             }
         }
-
 
         //5.outros métodos da classe
         public double ValorTotalEmEstoque()
@@ -66,5 +61,6 @@ namespace properties_auto_implementadas
             + " unidades, Total: $ "
             + ValorTotalEmEstoque().ToString("F2", CultureInfo.InvariantCulture);
         }
+
     }
 }
