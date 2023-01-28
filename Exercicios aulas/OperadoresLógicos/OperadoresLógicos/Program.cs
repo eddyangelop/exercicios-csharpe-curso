@@ -1,16 +1,14 @@
 ﻿using System;
 
-namespace operadores_logicos
+namespace OperadoresLogicos
 {
     class Program
     {
         static void Main(string[] args)
         {
-
             //expressão E
             bool c1 = 4 != 5;
             bool c2 = 2 > 3 && 4 != 5;
-
             Console.WriteLine(c1);
             Console.WriteLine(c2);
 
@@ -18,14 +16,12 @@ namespace operadores_logicos
 
             //expressão OU
             bool c3 = 2 > 3 || 4 != 5;
-
             Console.WriteLine(c3);
 
             Console.WriteLine("--------------------");
 
             //expressão NÃO
             bool c4 = !(2 > 3) && 4 != 5;
-
             Console.WriteLine(c4);
 
             Console.WriteLine("--------------------");
@@ -36,13 +32,8 @@ namespace operadores_logicos
             //expressão de precedência
 
             bool c6 = c1 || c2 && c3;
-
             Console.WriteLine(c6);
-
-
-
-
-            Console.ReadLine();
         }
+
     }
 }
