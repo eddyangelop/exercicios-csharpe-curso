@@ -1,12 +1,11 @@
 ﻿using System;
 
-namespace funcao_maior
+namespace MostrarMaior2
 {
     class Program
     {
         static void Main(string[] args)
         {
-
             Console.WriteLine("Digite Três números:");
             int n1 = int.Parse(Console.ReadLine());
             int n2 = int.Parse(Console.ReadLine());
@@ -15,7 +14,6 @@ namespace funcao_maior
             double resultado = Maior(n1, n2, n3);
 
             Console.WriteLine("Maior = " + resultado);
-
         }
 
         static int Maior(int a, int b, int c)
@@ -34,5 +32,6 @@ namespace funcao_maior
 
             return m;
         }
+
     }
 }
