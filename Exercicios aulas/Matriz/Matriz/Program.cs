@@ -6,7 +6,6 @@ namespace Matriz
     {
         static void Main(string[]args)
         {
-
             double[,] mat = new double[2, 3];
 
             // quantos elementos tem na matriz
@@ -20,8 +19,7 @@ namespace Matriz
 
             // indica o tamanho da dimenssão um(colunas)
             Console.WriteLine(mat.GetLength(1));
-
-
         }
+
     }
 }
