@@ -1,12 +1,12 @@
 ﻿using System;
 
-namespace Matriz_numeros_diagonal
+namespace MatrizNumerosDiagonal_CountNegative
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.Write("Digite o numero de linhas / colunas: ");
+            Console.Write("Digite o numero de linhas & colunas: ");
             int n = int.Parse(Console.ReadLine());
 
             int[,] mat = new int[n, n];
@@ -18,8 +18,8 @@ namespace Matriz_numeros_diagonal
                 for (int j = 0; j < n; j++)
                 {
                     mat[i, j] = int.Parse(values[j]);
-
                 }
+
             }
 
             Console.WriteLine("Main diagonal: ");
@@ -28,7 +28,6 @@ namespace Matriz_numeros_diagonal
                 Console.Write(mat[i, i] + " ");
             }
             Console.WriteLine();
-
 
             int count = 0;
             for (int i = 0; i < n; i++)
@@ -42,9 +41,9 @@ namespace Matriz_numeros_diagonal
                 }
                 
             }
+
             Console.WriteLine("Negative numbers: " + count);
-
-
         }
+
     }
 }
