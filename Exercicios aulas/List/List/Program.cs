@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace List_add_insert
+namespace ListAddInsert
 {
     class Program
     {
@@ -10,26 +10,30 @@ namespace List_add_insert
             List<string> list = new List<string>();
             // Adiciona objetos na lista
             Console.WriteLine();
-            Console.WriteLine("--------------Objetos adicionados na lista-------------------");
+
+            Console.WriteLine("--------------Objetos adicionados na lista---------------------");
+
             list.Add("Maria");
             list.Add("Alex");
             list.Add("Bob");
             list.Add("Anna");
             list.Add("Marco");
+
             foreach (string obj in list)
             {
                 Console.WriteLine(obj);
             }
-            
+
             // Insere objetos na lista
             Console.WriteLine();
-            Console.WriteLine("--------------Objetos inserido na lista----------------------");
+
+            Console.WriteLine("--------------Objetos inserido na lista------------------------");
+
             list.Insert(1, "Eddy");
             foreach (string obj in list)
             {
                 Console.WriteLine(obj);
             }
-            
 
             /*
             // Mostra a quantidade de objetos na lista
@@ -37,7 +41,6 @@ namespace List_add_insert
             Console.WriteLine("--------------Mostra a quantidade de objetos da lista----------");
             Console.WriteLine("List Count: " + list.Count);
             */
-
 
             /*
             // Encontra a primeira letra do objeto predicado com a função lambda
@@ -59,13 +62,12 @@ namespace List_add_insert
             /*
             // Encontra na lista o primeiro e o ultimo nome começados com a letra A
             Console.WriteLine();
-            Console.WriteLine("----Posições de objetos começados e terminados com a letra A----");
+            Console.WriteLine("----Posições de objetos começados e terminados com a letra A---");
             int position1 = list.FindIndex(x => x[0] == 'A');
             Console.WriteLine("First position 'A': " + position1);
             int position2 = list.FindLastIndex(x => x[0] == 'A');
             Console.WriteLine("Last position 'A': " + position2);
             */
-
 
             /*
             // Identifica e mostra objetos com 5 caracteres
@@ -82,7 +84,7 @@ namespace List_add_insert
             // Remove objeto especifico da lista
             list.Remove("Alex");
             Console.WriteLine();
-            Console.WriteLine("---------------Objeto especifico removido--------------------");
+            Console.WriteLine("---------------Objeto especifico removido----------------------");
             foreach(string obj in list)
             Console.WriteLine(obj);
             */
@@ -91,27 +93,25 @@ namespace List_add_insert
             // Remove todos os objetos identificados pelo caracter da lista
             list.RemoveAll(x => x[0] == 'M');
             Console.WriteLine();
-            Console.WriteLine("-----------Objeto removido com caracter especifico-----------");
+            Console.WriteLine("-----------Objeto removido com caracter especifico-------------");
             foreach (string obj in list)
                 Console.WriteLine(obj);
             */
 
-            
             list.RemoveAt(3);
             Console.WriteLine();
-            Console.WriteLine("-----------Objeto removido na posição especifica-----------");
+            Console.WriteLine("-----------Objeto removido na posição especifica---------------");
             foreach (string obj in list)
                 Console.WriteLine(obj);
-           
 
             list.RemoveRange(2, 2);
             Console.WriteLine();
-            Console.WriteLine("-----------Objeto removido na posição especifica e sequencial-----------");
+            Console.WriteLine("--------Objeto removido na posição especifica e sequencial-----");
             foreach (string obj in list)
                 Console.WriteLine(obj);
 
-
             Console.ReadLine();
         }
+
     }
 }
