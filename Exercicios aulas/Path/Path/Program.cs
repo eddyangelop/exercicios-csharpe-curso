@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace Metodo_path
+namespace MetodoPath
 {
     class Program
     {
@@ -17,11 +17,7 @@ namespace Metodo_path
             Console.WriteLine("GetFileNameWithoutExtension: " + Path.GetFileNameWithoutExtension(path));
             Console.WriteLine("GetFullPath: " + Path.GetFullPath(path));
             Console.WriteLine("GetTempPath: " + Path.GetTempPath());
-
-            Console.ReadLine();
         }
 
-
     }
-
 }
