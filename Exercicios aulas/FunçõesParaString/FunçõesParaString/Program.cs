@@ -1,12 +1,11 @@
 ﻿using System;
 
-namespace funcoes_strings
+namespace FuncoesStrings
 {
     class Program
     {
         static void Main(string[] args)
         {
-
             string original = "abcde FGHIJ ABC abc DEFG ";
             string s1 = original.ToUpper();
             string s2 = original.ToLower();
@@ -58,10 +57,7 @@ namespace funcoes_strings
 
             // testa se a string recebeu um valor nulo ou espaços vazios.
             Console.WriteLine("IsNullOrWhiteSpace: " + b2);
-
-
-
-
         }
+
     }
 }
