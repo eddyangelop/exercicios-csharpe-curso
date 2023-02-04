@@ -6,7 +6,6 @@ namespace Generics
     {
         static void Main(string[] args)
         {
-
             PrintService<int> printService = new PrintService<int>();
 
             Console.Write("How many values? ");
@@ -17,12 +16,9 @@ namespace Generics
                 int x = int.Parse(Console.ReadLine());
                 printService.AddValue(x);
             }
-
-
             printService.Print();
             Console.WriteLine("First: " + printService.First());
-
-
         }
+
     }
 }

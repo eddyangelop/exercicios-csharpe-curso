@@ -23,9 +23,7 @@ namespace Generics
             {
                 throw new InvalidOperationException("PrintService is empty");
             }
-
             return _values[0];
-
         }
 
         public void Print()
@@ -40,7 +38,7 @@ namespace Generics
                 Console.Write(_values[_count - 1]);
             }
             Console.WriteLine("]");
-
         }
+
     }
 }
