@@ -36,7 +36,6 @@ namespace BlocoUsing
 
             try
             {
-
                 using (StreamReader sr = File.OpenText(path))
                 {
                     while (!sr.EndOfStream)
@@ -45,13 +44,13 @@ namespace BlocoUsing
                         Console.WriteLine(line);
                     }
                 }
-
             }
             catch (IOException e)
             {
                 Console.WriteLine("an error occurred");
                 Console.WriteLine(e.Message);
             }
+
         }
     }
 }
