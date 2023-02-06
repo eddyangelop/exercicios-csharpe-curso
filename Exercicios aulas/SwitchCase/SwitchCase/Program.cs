@@ -1,14 +1,15 @@
 ﻿using System;
 
-namespace switch_case
+namespace SwitchCase
 {
     class Program
     {
         static void Main(string[] args)
         {
-
             int x = int.Parse(Console.ReadLine());
+
             string day;
+
             switch (x)
             {
                 case 1:
@@ -37,8 +38,7 @@ namespace switch_case
                     break;
             }
             Console.WriteLine("Day: " + day);
-
-
         }
+
     }
 }
