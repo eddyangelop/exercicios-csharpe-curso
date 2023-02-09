@@ -5,12 +5,11 @@ namespace streamWriter
 {
     class Program
     {
-        // cria e escreve um novo arquivo.
+        // cria e escreve um novo arquivo, com letras maiusculas.
         static void Main(string[] args)
         {
-
-            string sourcePath = @"c:\temp\file1.txt";
-            string targetPath = @"c:\temp\file2.txt";
+            string sourcePath = @"c:\demo\file1.txt";
+            string targetPath = @"c:\demo\file2.txt";
 
             try
             {
